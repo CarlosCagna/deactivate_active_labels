@@ -6,14 +6,14 @@
 name=Deactivate Active Labels
 qgisMinimumVersion=3.0
 description=on/off layer’s label 
-version=0.3
+version=0.4
 author=Carlos Eduardo Cagna
 email=carlos_cagna@yahoo.com.br
 
 about=This Plugin create one Button to on/off layer’s label and other Button to deactivate all labels and Active all labels that have been deactivate before.
 
-tracker=https://github.com/CarlosCagna/Qgis3/issues
-repository=https://github.com/CarlosCagna/Qgis3/tree/master/deactivate_active_labels
+tracker=https://github.com/CarlosCagna/deactivate_active_labels/issues
+repository=https://github.com/CarlosCagna/deactivate_active_labels
 # End of mandatory metadata
 
 # Recommended items:
@@ -25,7 +25,7 @@ hasProcessingProvider=no
 # Tags are comma separated with spaces allowed
 tags= labeling, label
 
-homepage=https://github.com/CarlosCagna/Qgis3/tree/master/deactivate_active_labels
+homepage= https://github.com/CarlosCagna/deactivate_active_labels
 category=Plugins
 icon=label.png
 # experimental flag
