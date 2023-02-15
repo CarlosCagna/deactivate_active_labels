@@ -209,15 +209,16 @@ class DeactivateActiveLabels:
     def run(self):
         """Run method that performs all the real work""" 
         layer = self.iface.activeLayer()
-        if layer.type() == 0:
-            if self.active_label.isChecked():
-                layer.setLabelsEnabled(True)
-                self.active_label.setText('Deactivate Label(Select Layer)')
-            else:
-                layer.setLabelsEnabled(False)
-                self.active_label.setText('Active Label(Select Layer)')
-        self.canvas.refresh()
-        pass
+        if layer != None:
+            if layer.type() == 0:
+                if self.active_label.isChecked():
+                    layer.setLabelsEnabled(True)
+                    self.active_label.setText('Deactivate Label(Select Layer)')
+                else:
+                    layer.setLabelsEnabled(False)
+                    self.active_label.setText('Active Label(Select Layer)')
+            self.canvas.refresh()
+            pass
             
     def run_2(self):  
         if not self.active_all.isChecked():
@@ -233,7 +234,7 @@ class DeactivateActiveLabels:
             if len(self.list_layers) > 0:
                 for layer in self.list_layers:
                         layer.setLabelsEnabled(True)
-            self.active_all.setText('deactivate all labels')
+            self.active_all.setText('Deactivate all labels')
             
         self.canvas.refresh()
         self.set_checked()
